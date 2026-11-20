@@ -4,7 +4,6 @@ import 'card.dart';
 class CardManager {
   static List<Card> cards = [];
   static var cardIconList = ["Apple", "Pie", "Medal", "Cat"];
-  static var usedIcons = [];
 
   static void makeCards() {
     for (var icon in cardIconList) {

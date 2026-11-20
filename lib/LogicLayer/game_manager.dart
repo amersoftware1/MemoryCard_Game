@@ -7,7 +7,7 @@ class GameManager {
     }
   }
 
-  static endGame() {
+  static void endGame() {
     resetCards();
   }
 

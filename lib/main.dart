@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'LogicLayer/game_manager.dart';
-import 'PresentationLayer/start_screen.dart';
+import 'PresentationLayer/CustomElements/game_grid.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: StartScreen(),
+      home: MainBody(),
     );
   }
 }
@@ -23,10 +23,7 @@ class MainBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.blue),
-      body: Center(child: Text("hello world")),
-    );
+    return Scaffold(body: Center(child: GameGrid()));
   }
 }
 
